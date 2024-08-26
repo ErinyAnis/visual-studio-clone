@@ -3,13 +3,49 @@
 @tailwind utilities;
 
 body {
-  background-color: #1E1E1E;
+  background-color: #2d2d2d;
   color: #D4D4D4;
-  font-size: 20px;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
+
+/* For WebKit browsers */
+.custom-scrollbar {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #888 #f1f1f1; /* Firefox */
+}
+
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b6b6b6; /* Color of the scroll thumb */
+  border-radius: 10px; /* Rounded corners of the thumb */
+  transition: 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7d7d7da8; /* Color of the scroll thumb on hover */
+  transition: 0.3s;
+}
+
 
 @media (max-width: 992px) {
   body{
     font-size: 16px;
+  }
+}
+@media (max-width: 787px) {
+  body{
+    font-size: 14px;
   }
 }
