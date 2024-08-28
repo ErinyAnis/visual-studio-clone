@@ -4,7 +4,10 @@ import RightArrowIcon from "./SVG/RightArrowIcon";
 import ButtomArrowIcon from "./SVG/ButtomArrowIcon";
 import RenderFileIcon from "./RenderFileIcon";
 import { useDispatch, useSelector } from "react-redux";
-import { setClickedFileAction, setOpenedFilesAction } from "../app/features/fileTreeSlice";
+import {
+  setClickedFileAction,
+  setOpenedFilesAction,
+} from "../app/features/fileTreeSlice";
 import { RootState } from "../app/store";
 import { doesFileObjectExist } from "../utils/functions";
 
@@ -30,11 +33,10 @@ const RecursiveComponent = ({ fileTree }: IProps) => {
         activeTabId: id,
       })
     );
-    if(exists){
+    if (exists) {
       return;
     }
     dispatch(setOpenedFilesAction([...openedFiles, fileTree]));
-    
   };
 
   return (
