@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import FileSyntaxHighlighter from "./FileSyntaxHighlighter";
-import OpenedFilesbar from "./OpenedFileBar";
+import OpenedFilesbar from "./OpenedFilesBar";
 import { RootState } from "../app/store";
 
 const Preview = () => {
