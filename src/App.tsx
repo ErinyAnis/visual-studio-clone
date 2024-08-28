@@ -10,7 +10,7 @@ function App() {
   const { openedFiles } = useSelector(({ tree }: RootState) => tree);
 
   return (
-    <div className="flex max-h-screen overflow-hidden">
+    <div className="flex max-h-screen ">
       <ResizeablePanel
         showLeftPanel
         leftPanel={
